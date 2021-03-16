@@ -60,7 +60,6 @@ public class DemoplanitTest extends Base{
 			
 		 
 		 //clear the shopping cart
-		 driver.manage().timeouts().implicitlyWait(Utils.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		 homePage.emptycart();
 			 
 		 //clicking on books
