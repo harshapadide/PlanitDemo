@@ -44,7 +44,6 @@ public class DemoplanitTest extends Base{
 		
 		System.out.println("login success message"+""+message);
 		
-		
 		//login with test credetials
 		 homePage = new HomePage();
 		 homePage=loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
