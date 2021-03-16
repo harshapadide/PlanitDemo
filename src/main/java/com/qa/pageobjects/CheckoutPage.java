@@ -93,7 +93,7 @@ public class CheckoutPage extends Base{
 	@FindBy(xpath = "//input[contains(@value,'Confirm')]")
 	WebElement orderconfirm;
 	
-	@FindBy(xpath = "/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div[1]/div[1]/strong")
+	@FindBy(xpath = "//strong[contains(.,'Order #887873')]")
 	WebElement orderid;
 	
 	@FindBy(linkText="Log out")
@@ -111,7 +111,7 @@ public class CheckoutPage extends Base{
 	
 	//Actions:
 	
-	public void billingadress(String ftname,String ltname,String mail,String countryname ,String city,String Adrs,String zip, String number) {
+	public void billingAdress(String ftname,String ltname,String mail,String countryname ,String city,String Adrs,String zip, String number) {
 		Select baddress = new Select(billing);
 		baddress.selectByVisibleText("New Address");
 		firstname.clear();
@@ -131,7 +131,7 @@ public class CheckoutPage extends Base{
 		
 	}
 	
-	public void shippingadress(String sftname,String sltname,String smail,String scountryname ,String scity,String sAdrs,String szip, String snumber)
+	public void shippingAdress(String sftname,String sltname,String smail,String scountryname ,String scity,String sAdrs,String szip, String snumber)
 	{
 		Select shippingadd = new Select(shipping);
 		shippingadd.selectByVisibleText("New Address");

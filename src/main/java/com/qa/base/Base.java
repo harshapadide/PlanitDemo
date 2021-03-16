@@ -50,7 +50,6 @@ public static void initialization(){
 	
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
-	driver.manage().timeouts().pageLoadTimeout(Utils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(Utils.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	
 	driver.get(prop.getProperty("url"));

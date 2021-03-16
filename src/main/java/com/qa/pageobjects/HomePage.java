@@ -50,12 +50,12 @@ public class HomePage extends Base{
 	
 	//Actions:
 	
-	public String validateaccountid()
+	public String validateAccountId()
 	{
 		return accountid.getText().toString();
 	}
 	
-	public void emptycart()
+	public void emptyCart()
 	{
 		cart.click();
 		remove.click();
@@ -63,23 +63,23 @@ public class HomePage extends Base{
 		
 	}
 	
-	public void clickonbooks() 
+	public void clickOnBooks() 
    {
 	books.click();
 		 
 	}
 	
-	public void selectabook()
+	public void selectaBook()
 	{
 		computing.click();
 	}
 	
-	public String getpricedetails()
+	public String getPriceDetails()
 	{
 		return pricedetails.getText().toString();
 	}
 	
-	public Object Increasequantity()
+	public Object increaseQuantity()
 	{
 		Quantity.clear();
 		 Quantity.sendKeys("3");
@@ -87,17 +87,17 @@ public class HomePage extends Base{
 		
 	}
 	
-	public void addtocart()
+	public void addToCart()
 	{
 		Add.click();
 		
 	}
 	
-	public String validatemessage() {
+	public String validateMessage() {
 		return message.getText().toString();
 	}
 	
-	public CartPage shoppingcart()
+	public CartPage shoppingCart()
 	{
 		cart.click();
 		return new CartPage();

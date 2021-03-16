@@ -35,12 +35,12 @@ public class CartPage extends Base{
 		return subtotal.getText().toString();
 	}
 	
-	public void termsofservice()
+	public void termsOfService()
 	{
 		termsofservice.click();
 	}
 	
-	public CheckoutPage checkout()
+	public CheckoutPage checkOut()
 	{
 		checkout.click();
 		return new CheckoutPage();
