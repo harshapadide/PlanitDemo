@@ -130,15 +130,15 @@
                   <a name="demotest">
                   </a> <!-- demotest -->
                   <span class="method-name">demotest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; class=&quot;button-1 payment-method-next-step-button&quot; onclick=&quot;PaymentMethod.save()&quot; value=&quot;Continue&quot;&gt; is not clickable at point (284, 473). Other element would receive the click: &lt;div class=&quot;buttons&quot; id=&quot;payment-method-buttons-container&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/customer/info&apos;][contains(.,&apos;atest@gmail.com&apos;)]&quot;}
   (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0-beta-1&apos;, revision: &apos;9c03156c2b&apos;
 System info: host: &apos;SYSTEM6&apos;, ip: &apos;192.168.100.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4282c0d92c7bee18137f51d15366668d, clickElement {id=f644064f-f8ca-443e-941d-6499a608869c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4282c0d92c7bee18137f51d15366668d)] -&gt; xpath: //input[@onclick=&apos;PaymentMethod.save()&apos;]]
-Session ID: 4282c0d92c7bee18137f51d15366668d
+Command: [159e0d9bcc299f96ef82473a8a96a567, findElement {using=xpath, value=//a[@href=&apos;/customer/info&apos;][contains(.,&apos;atest@gmail.com&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 159e0d9bcc299f96ef82473a8a96a567
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -146,14 +146,16 @@ Session ID: 4282c0d92c7bee18137f51d15366668d
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:239)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at com.qa.pageobjects.CheckoutPage.payment(CheckoutPage.java:163)
-	at com.qa.testcases.DemoplanitTest.demotest(DemoplanitTest.java:114)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.qa.pageobjects.HomePage.validateAccountId(HomePage.java:55)
+	at com.qa.testcases.DemoplanitTest.demotest(DemoplanitTest.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -215,12 +217,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'demotest')
 data.setCell(0, 2, 'com.qa.testcases.DemoplanitTest')
-data.setCell(0, 3, 17153);
+data.setCell(0, 3, 21675);
 window.suiteTableData['Test_suite']= { tableData: data, tableDiv: 'times-div-Test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Test_suite">
               </div> <!-- times-div-Test_suite -->
             </div> <!-- times-div -->
@@ -255,11 +257,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">demotest</span>
-                <span class="method-start">9888 ms</span>
+                <span class="method-start">8588 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeapp</span>
-                <span class="method-start">27052 ms</span>
+                <span class="method-start">30273 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

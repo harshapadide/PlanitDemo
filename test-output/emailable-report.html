@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Test suite</th></tr>
-<tr><td><a href="#t0"> Test Cases</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">27,900</td><td></td><td></td></tr>
+<tr><td><a href="#t0"> Test Cases</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30,979</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4"> Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testcases.DemoplanitTest</td><td><a href="#m0">demotest</a></td><td rowspan="1">1615903414408</td><td rowspan="1">17153</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4"> Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testcases.DemoplanitTest</td><td><a href="#m0">demotest</a></td><td rowspan="1">1615903786988</td><td rowspan="1">21675</td></tr></tbody>
 </table>
-<h2> Test Cases</h2><h3 id="m0">com.qa.testcases.DemoplanitTest#demotest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;button&quot; class=&quot;button-1 payment-method-next-step-button&quot; onclick=&quot;PaymentMethod.save()&quot; value=&quot;Continue&quot;&gt; is not clickable at point (284, 473). Other element would receive the click: &lt;div class=&quot;buttons&quot; id=&quot;payment-method-buttons-container&quot;&gt;...&lt;/div&gt;
+<h2> Test Cases</h2><h3 id="m0">com.qa.testcases.DemoplanitTest#demotest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/customer/info&apos;][contains(.,&apos;atest@gmail.com&apos;)]&quot;}
   (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0-beta-1&apos;, revision: &apos;9c03156c2b&apos;
 System info: host: &apos;SYSTEM6&apos;, ip: &apos;192.168.100.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4282c0d92c7bee18137f51d15366668d, clickElement {id=f644064f-f8ca-443e-941d-6499a608869c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4282c0d92c7bee18137f51d15366668d)] -&gt; xpath: //input[@onclick=&apos;PaymentMethod.save()&apos;]]
-Session ID: 4282c0d92c7bee18137f51d15366668d
+Command: [159e0d9bcc299f96ef82473a8a96a567, findElement {using=xpath, value=//a[@href=&apos;/customer/info&apos;][contains(.,&apos;atest@gmail.com&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 159e0d9bcc299f96ef82473a8a96a567
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:195)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:128)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -29,13 +29,15 @@ Session ID: 4282c0d92c7bee18137f51d15366668d
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:239)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at com.qa.pageobjects.CheckoutPage.payment(CheckoutPage.java:163)
-	at com.qa.testcases.DemoplanitTest.demotest(DemoplanitTest.java:114)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.qa.pageobjects.HomePage.validateAccountId(HomePage.java:55)
+	at com.qa.testcases.DemoplanitTest.demotest(DemoplanitTest.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

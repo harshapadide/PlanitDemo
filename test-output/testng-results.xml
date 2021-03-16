@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-16T14:03:24 GMT" name="Test suite" finished-at="2021-03-16T14:03:52 GMT" duration-ms="27900">
+  <suite started-at="2021-03-16T14:09:38 GMT" name="Test suite" finished-at="2021-03-16T14:10:09 GMT" duration-ms="30979">
     <groups>
     </groups>
-    <test started-at="2021-03-16T14:03:24 GMT" name=" Test Cases" finished-at="2021-03-16T14:03:52 GMT" duration-ms="27900">
+    <test started-at="2021-03-16T14:09:38 GMT" name=" Test Cases" finished-at="2021-03-16T14:10:09 GMT" duration-ms="30979">
       <class name="com.qa.testcases.DemoplanitTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testcases.DemoplanitTest@2b48a640]" started-at="2021-03-16T14:03:24 GMT" name="setup" finished-at="2021-03-16T14:03:34 GMT" duration-ms="9888" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testcases.DemoplanitTest@2b48a640]" started-at="2021-03-16T14:09:38 GMT" name="setup" finished-at="2021-03-16T14:09:46 GMT" duration-ms="8587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="demotest()[pri:0, instance:com.qa.testcases.DemoplanitTest@2b48a640]" started-at="2021-03-16T14:03:34 GMT" name="demotest" finished-at="2021-03-16T14:03:51 GMT" duration-ms="17153" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="demotest()[pri:0, instance:com.qa.testcases.DemoplanitTest@2b48a640]" started-at="2021-03-16T14:09:46 GMT" name="demotest" finished-at="2021-03-16T14:10:08 GMT" duration-ms="21675" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <input type="button" class="button-1 payment-method-next-step-button" onclick="PaymentMethod.save()" value="Continue"> is not clickable at point (284, 473). Other element would receive the click: <div class="buttons" id="payment-method-buttons-container">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/customer/info'][contains(.,'atest@gmail.com')]"}
   (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-beta-1', revision: '9c03156c2b'
 System info: host: 'SYSTEM6', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4282c0d92c7bee18137f51d15366668d, clickElement {id=f644064f-f8ca-443e-941d-6499a608869c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4282c0d92c7bee18137f51d15366668d)] -> xpath: //input[@onclick='PaymentMethod.save()']]
-Session ID: 4282c0d92c7bee18137f51d15366668d]]>
+Command: [159e0d9bcc299f96ef82473a8a96a567, findElement {using=xpath, value=//a[@href='/customer/info'][contains(.,'atest@gmail.com')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 159e0d9bcc299f96ef82473a8a96a567]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="button" class="button-1 payment-method-next-step-button" onclick="PaymentMethod.save()" value="Continue"> is not clickable at point (284, 473). Other element would receive the click: <div class="buttons" id="payment-method-buttons-container">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='/customer/info'][contains(.,'atest@gmail.com')]"}
   (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-beta-1', revision: '9c03156c2b'
 System info: host: 'SYSTEM6', ip: '192.168.100.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4282c0d92c7bee18137f51d15366668d, clickElement {id=f644064f-f8ca-443e-941d-6499a608869c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4282c0d92c7bee18137f51d15366668d)] -> xpath: //input[@onclick='PaymentMethod.save()']]
-Session ID: 4282c0d92c7bee18137f51d15366668d
+Command: [159e0d9bcc299f96ef82473a8a96a567, findElement {using=xpath, value=//a[@href='/customer/info'][contains(.,'atest@gmail.com')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Harsha\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 159e0d9bcc299f96ef82473a8a96a567
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,15 +46,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:239)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at com.qa.pageobjects.CheckoutPage.payment(CheckoutPage.java:163)
-at com.qa.testcases.DemoplanitTest.demotest(DemoplanitTest.java:114)
+at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy16.getText(Unknown Source)
+at com.qa.pageobjects.HomePage.validateAccountId(HomePage.java:55)
+at com.qa.testcases.DemoplanitTest.demotest(DemoplanitTest.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,11 +84,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demotest -->
-        <test-method is-config="true" signature="closeapp()[pri:0, instance:com.qa.testcases.DemoplanitTest@2b48a640]" started-at="2021-03-16T14:03:51 GMT" name="closeapp" finished-at="2021-03-16T14:03:52 GMT" duration-ms="818" status="PASS">
+        <test-method is-config="true" signature="closeapp()[pri:0, instance:com.qa.testcases.DemoplanitTest@2b48a640]" started-at="2021-03-16T14:10:08 GMT" name="closeapp" finished-at="2021-03-16T14:10:09 GMT" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeapp -->

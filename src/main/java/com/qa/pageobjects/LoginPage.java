@@ -13,7 +13,7 @@ public class LoginPage extends Base{
 	@FindBy(linkText="Log in")
 	WebElement login;
 	
-	@FindBy(xpath="/html/body/div[4]/div[1]/div[4]/div[2]/div/div[1]/h1")
+	@FindBy(xpath = "//h1[contains(.,'Welcome, Please Sign In!')]")
 	WebElement welcomemessage;
 	
 	@FindBy(name="Email")
